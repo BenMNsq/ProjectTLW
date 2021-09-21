@@ -7,4 +7,6 @@ footer
 {
     position:absolute;
     bottom:0px;
+    border:2px solid black;
+    width:100%;
 }
