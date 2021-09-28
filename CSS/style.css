@@ -1,10 +1,8 @@
-body
-{
+body{
     background-color:grey;
 
 }
-footer
-{
+footer{
     position:absolute;
     bottom:0px;
     border:2px solid black;
@@ -14,4 +12,8 @@ footer
     color:white;
     font-size:18px;
     text-align: center;
+}
+.accueil{
+    background-image:url("https://images.squarespace-cdn.com/content/v1/5edbee962dbee276845885f2/1599420869866-DAXXUN8MFFO46KNKDUOA/P%C3%A2tissier+professionnel");
+    
 }
