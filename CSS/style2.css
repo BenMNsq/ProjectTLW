@@ -1,3 +1,22 @@
 .slide_image {
     width: 10%;
 }
+.slide_image {
+    direction: flex;
+    flex-direction: column;
+    -ms-flex-align: stretch;
+}
+
+.Navigateur {
+    display: flex;
+    row-gap:100%
+    
+}
+.Navigation {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    flex-grow: 1;
+}
