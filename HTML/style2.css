@@ -1,6 +1,7 @@
 .slide_image {
     width: 10%;
 }
+
 .slide_image {
     direction: flex;
     flex-direction: column;
@@ -9,7 +10,8 @@
 
 .Navigateur {
     display: flex;
-    row-gap:100%
+    justify-content:space-between;
+    row-gap:100%;
     
 }
 .Navigation {
