@@ -9,9 +9,9 @@
 <body >
     <header id="header"></header>
 <div class="carousel-container" data-ride="caroussel">
-    <div class="slide" style="background-image: url('../images/birthday.jpg');"> 
+    <div class="slide" style="background-image: url('../images/PersoGateau.jpg');"> 
         <h2 class="titre_slide">Personnalisez votre gâteau</h1>
-        <p> Vous organisez un évènement important à vos yeux et 
+        <p class="text"> Vous organisez un évènement important à vos yeux et 
         vous voulez marquer le coup ?
         Essayez donc d'offrir un gâteau personnalisé à vos proches.
         </p>
@@ -21,7 +21,7 @@
 
     <div class="slide" style="background-image: url('../images/breadBio.jpg');"> 
         <h2 class="titre_slide"> Une recette 100% biologique</h2>
-        <p> Nous choisissons des produits frais issus de fermes
+        <p class="text"> Nous choisissons des produits frais issus de fermes
             biologiques et locales pour la préparation de vos gâteaux. 
             En effet, nous avons à coeur d'animer vos yeux et vos papilles
             de manière responsable.
@@ -33,16 +33,16 @@
 
     <div class="slide" style="background-image: url('../images/cakeBB.jpg');">
         <h2 class="titre_slide"> Un savoir-faire transmis depuis 1883</h2>
-        <p> Notre patissier Bernard Bigot, deux étoiles MICHELIN, passionné depuis sa tendre enfance aux fourneaux de la cuisine de mamie,
+        <p class="text"> Notre patissier Bernard Bigot, deux étoiles MICHELIN, passionné depuis sa tendre enfance aux fourneaux de la cuisine de mamie,
             traitera chacune de vos commandes avec le plus grand soin. </p>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             
     </div>
+
     <div class="slide" style="background-image: url('../images/photoEkip.jpg');">
         <h2 class="titre_slide"> Notre équipe</h2>
-
-        <a href="team.html" title="en savoir plus sur notre equipe" class="button">Membres de l'équipe</a>
+        <a id="Bequipe" href="team.html" title="en savoir plus sur notre equipe">Membres de l'équipe</a>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>    
     </div>
@@ -51,7 +51,19 @@
             <a href="Personaliser.html?etages=1"><img  src="../images/undecorated_iced_sponge_cake-ROUND.jpg" alt="Personaliser.html?etages=1"></a>
             <a href="Personaliser.html?etages=2"><img  src="../images/index.jpeg" salt="Personaliser.html?etages=2"></a>
             <a href="Personaliser.html?etages=3"><img  src="../images/0022864500000_B.jpg" alt="Personaliser.html?etages=3"></a>
+    <div id="affichageDot">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
     </div>
+
+
+</div>
+<div id="bgateaudiv">
+    <a id="bgateau" href="Personaliser.html?etages=1">1 étage</a>
+    <a id="bgateau" href="Personaliser.html?etages=2">2 étage</a>
+    <a id="bgateau" href="Personaliser.html?etages=3">3 étage</a>
 </div>
     <footer id="footer"></footer>
 
