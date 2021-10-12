@@ -5,7 +5,7 @@ body{
 }
 footer{
     background-color:grey;
-    position:relative;
+    position:absolute;
     bottom:0px;
     border-top:2px solid black;
     width:100%;
@@ -59,4 +59,91 @@ a.button {
     text-decoration: none;
     color: initial;
 }
+
+/* PARTIE CAROUSEL */
+/*                   */
+
+.titre_slide {
+    position: absolute;
+    top: 5px;
+    padding-left: 20px;padding-right: 20px;
+    text-align: center;
+    width: 100%;
+    font: small-caps bold 24px/1 sans-serif;
+  }
+  
+  
+  
+.carousel-container {
+      width: 80vw;
+      height:70vw;
+      position:relative;
+      margin-top: 10%;
+      margin-left: 20%; margin-right:20%;
+      object-fit: cover;
+    }
+  
+.slide {
+      position: relative;
+      display: none;
+      height: 75%;
+      width: 75%;
+      background-size: contain; /* permet d'ajuster l'image dans le div */
+      background-repeat: no-repeat;
+      background-position: center;
+    
+    }
+  
+.text {
+      position: absolute;
+      padding-top: 10%;
+      text-align: center;
+      top: 200px;
+      color:oldlace;
+      font: small-caps 12px/1 sans-serif;
+    }
+.prev, .next {
+    height:5%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%; bottom:50%;  /* trouver la bonne taille*/
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color:rgb(7, 7, 7);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+.next {
+      right: 0%;
+      border-radius: 3px 0 0 3px;
+    }
+.prev:hover, .next:hover {
+    background-color:rgb(136, 131, 132);
+    }
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+    
+#affichageDot {
+    position : absolute;
+    top:80% ; left:45%;
+    
+}
+
+/* fin carousel */
+
 

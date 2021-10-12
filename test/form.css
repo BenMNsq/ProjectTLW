@@ -1,7 +1,10 @@
 .titre_slide {
-    text-align: center;
-    
-    font: small-caps bold 24px/1 sans-serif;
+  position: absolute;
+  top: 5px;
+  padding-left: 20px;padding-right: 20px;
+  text-align: center;
+  width: 100%;
+  font: small-caps bold 24px/1 sans-serif;
 }
 
 
@@ -29,14 +32,16 @@
   .text {
     position: absolute;
     padding-top: 10%;
+    text-align: center;
     top: 200px;
-    color:rgb(2, 1, 1);
+    color:oldlace;
     font: small-caps 12px/1 sans-serif;
   }
   .prev, .next {
+    height:5%;
     cursor: pointer;
     position: absolute;
-    top: 15%;  /* trouver la bonne taille*/
+    top: 50%; bottom:50%;  /* trouver la bonne taille*/
     width: auto;
     margin-top: -22px;
     padding: 16px;
