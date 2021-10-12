@@ -48,3 +48,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "inline-block";
   dots[slideIndex-1].className += " active";
 } 
+function personnaliser() {
+    document.location.href="Personnaliser.html"
+}
