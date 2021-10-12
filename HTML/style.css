@@ -125,7 +125,7 @@ a.button {
     }
   
 .text {
-      position: absolute;
+      position: relative;
       padding-top: 10%;
       text-align: center;
       top: 200px;
