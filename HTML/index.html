@@ -23,7 +23,7 @@
         <h1 id='titre_site'> Le gâteau de mes rêves</h1>
     </header>
 <div class="carousel-container" data-ride="caroussel">
-    <div class="slide" style="background-image: url('../images/birthday.jpg');"> 
+    <div class="slide" style="background-image: url('../images/PersoGateau.jpg');"> 
         <h2 class="titre_slide">Personnalisez votre gâteau</h1>
         <p class="text"> Vous organisez un évènement important à vos yeux et 
         vous voulez marquer le coup ?
@@ -53,18 +53,27 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             
     </div>
+
     <div class="slide" style="background-image: url('../images/photoEkip.jpg');">
         <h2 class="titre_slide"> Notre équipe</h2>
-        <a id="Bequipe" href="team.html" title="en savoir plus sur notre equipe" class="button">Membres de l'équipe</a>
+        <a id="Bequipe" href="team.html" title="en savoir plus sur notre equipe">Membres de l'équipe</a>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>    
     </div>
 
-    <div id="bgateaudiv">
-        <a id="bgateau" href="Personaliser.html?etages=1">1 étage</a>
-        <a id="bgateau" href="Personaliser.html?etages=2">2 étage</a>
-        <a id="bgateau" href="Personaliser.html?etages=3">3 étage</a>
+    <div id="affichageDot">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
     </div>
+
+
+</div>
+<div id="bgateaudiv">
+    <a id="bgateau" href="Personaliser.html?etages=1">1 étage</a>
+    <a id="bgateau" href="Personaliser.html?etages=2">2 étage</a>
+    <a id="bgateau" href="Personaliser.html?etages=3">3 étage</a>
 </div>
     <footer>
         
