@@ -22,3 +22,8 @@
     color: initial;
     flex-grow: 1;
 }
+.nvcompte {
+    display:flex;
+    flex-direction:column;
+    
+}
