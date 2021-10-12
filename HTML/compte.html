@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="compte.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" onsubmit="before()">
+        <label for='prenom'>First Name *:</label>
+        <input type="text"  id="prenom" name="given-name">
+        <label for='nom'> Last Name* :</label>
+        <input type="text"   id="nom" name="family-name">
+        <label for='email'>Adresse mail *:</label> 
+        <input type="email"  id="email" name="mail">
+        <label for='numtel'>Numero de téléphone :</label> 
+        <input type="text" id="numtel" name="numtel" >
+        <label for='adresse'>Adresse postale *:</label> 
+        <input type="text"  id="adresse" name="street-address" tittle="addresse postale">
+        <label for='codepostal'>Code Postal *:</label> 
+        <input type="text"  id="codepostal" name="postal-code"  tittle="Code Postal">
+        <button type="submit" id="envoyerformulaire">Créer mon compte</button>
+    </form>
+    <button onclick="supprimer()">Réinitialiser les données</button>
+    <script src="compte.js"></script>
+</body>
+</html>
