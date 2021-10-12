@@ -5,7 +5,7 @@ body{
 }
 footer{
     background-color:grey;
-    position:absolute;
+    position:relative;
     bottom:0px;
     border-top:2px solid black;
     width:100%;
