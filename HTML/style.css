@@ -11,7 +11,7 @@ footer{
     width:100%;
 }
 
-button{
+.baccueil{
     position:relative;
     padding:12px;
     background-color:black;
@@ -23,7 +23,9 @@ button{
     cursor:pointer;
 }
 
-button:hover{
+
+
+.baccueil:hover{
     opacity:1;
     background-color:white;
     color:black;
@@ -42,6 +44,34 @@ header{
     font-size:18px;
     text-align: center;
 }
+
+#bgateaudiv {
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+#bgateau {
+    background-color:blanchedalmond;
+    text-align: center;
+    font-size: larger;
+    border-color:burlywood;
+    border-style: solid;
+    border-radius: 1px;
+    position: relative;
+    width:20%;
+    height:80px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+    opacity:0.6;
+    text-decoration: none;
+}
+
+#bgateau:hover {
+    opacity: 1;
+    transition-duration: 0.6s;
+}
+
 .accueil{
     background-image:url("https://images.squarespace-cdn.com/content/v1/5edbee962dbee276845885f2/1599420869866-DAXXUN8MFFO46KNKDUOA/P%C3%A2tissier+professionnel");
     border:2px solid black;

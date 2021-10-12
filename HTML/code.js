@@ -17,3 +17,7 @@ function team() {
 function contact() {
     document.location.href="Contact.html"
 }
+
+function personnaliser() {
+    document.location.href="Personnaliser.html"
+}
