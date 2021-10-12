@@ -143,12 +143,14 @@ a.button {
     font: small-caps 18px/1 sans-serif;
 }
 #Bequipe {
-    position: absolute;
-    top:250px; left:50%; right:50%;
-    text-decoration: none;
-    border:black;
-    color:oldlace;
     
+    position: absolute;
+    padding-top: 10%;
+    right:35%; left:36%;
+    text-align: center;
+    top: 200px;
+    color:oldlace;
+    font: small-caps 18px/1 sans-serif;    
 }
 .prev, .next {
     height:5%;
