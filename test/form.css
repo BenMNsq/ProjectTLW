@@ -21,6 +21,7 @@
     height: 500px;
     background-size: contain; /* permet d'ajuster l'image dans le div */
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   .text {
