@@ -1,7 +1,7 @@
 body{
     background-color:whitesmoke;
     margin:0px;
-
+    padding:0px;
 }
 footer{
     background-color:grey;
@@ -58,7 +58,7 @@ header{
     justify-content:space-evenly;
     position:relative;
     left:0%;
-
+    padding-top:200px;
 }
 
 /* .bgateau {
@@ -114,23 +114,23 @@ a.button {
 
 
 .carousel-container {
-      /* width: 800px; */
-      text-align: center;
-      /* height: 700px; */
-      /* position:absolute; */
-      margin-top: 5%; margin-left:auto; margin-right: auto;
-      
-      
+    /* width: 800px; */
+    text-align: center;
+    /* height: 700px; */
+    /* position:absolute; */
+    margin-top: 5%; margin-left:auto; margin-right: auto;
+    
+    
     }
 
 .slide {
-      position: relative;
-      display: none;
-      height: 450px;
-      width: 800px;
-      background-size: cover; /* permet d'ajuster l'image dans le div */
-      background-repeat: no-repeat;
-      background-position: center;
+    position: relative;
+    display: none;
+    height: 450px;
+    width: 800px;
+    background-size: cover; /* permet d'ajuster l'image dans le div */
+    background-repeat: no-repeat;
+    background-position: center;
     
     }
 
@@ -158,8 +158,6 @@ a.button {
     position: absolute;
     top: 50%; bottom:50%;  /* trouver la bonne taille*/
     width: auto;
-    /*margin-top: -22px;*/
-    /*padding: 16px; */
     color:rgb(7, 7, 7);
     font-weight: bold;
     font-size: 22px;
@@ -193,10 +191,9 @@ a.button {
 }
     
 #affichageDot {
-    /*position : absolute;
-    top:80% ; left:50%;*/
+    position : absolute;
+    top:80% ; left:50%;
 }
-
-/* fin carousel */
+/* fin carousel*/
 
 
