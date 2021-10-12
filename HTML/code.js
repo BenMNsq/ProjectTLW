@@ -1,4 +1,18 @@
-function monpanier() {
+/* Header et Footer */
+
+fetch("header.html")
+    .then(contenu => contenu.text())
+    .then(texte => {
+        document.getElementById("header").innerHTML = texte
+    })
+
+fetch("footer.html")
+    .then(contenu => contenu.text())
+    .then(texte => {
+        document.getElementById("footer").innerHTML = texte
+    })
+
+    function monpanier() {
     document.location.href="MonPanier.html"
 }
 
@@ -51,3 +65,5 @@ function showSlides(n) {
 function personnaliser() {
     document.location.href="Personnaliser.html"
 }
+
+
