@@ -11,15 +11,16 @@
 </head>
 <body>
     <header id="header"></header>
-    <h1 > Créer votre Compte :</h1>
+    
+    
 <p>Les champs suivis d'une * sont obligatoires</p>
 
-<form id="nvcompte">
-    <fieldset>
+<div id="nouveauCompte">
+        <h1 > Créer votre compte :</h1>
         <legend>Identité:</legend>
-            <label for='fname'>First Name *:</label>
+            <label for='fname'>Pénom *:</label>
             <input type="text" required id="fname" name="given-name">
-            <label for='lname'> Last Name* :</label>
+            <label for='lname'> Nom* :</label>
             <input type="text" required  id="lname" name="family-name">
             <label for='mail'>Adresse mail *:</label> 
             <input type="email" required id="mail" name="mail">
@@ -29,10 +30,21 @@
             <input type="text" required id="Saddress" name="street-address" tittle="addresse postale">
             <label for='postal-code'>Code Postal *:</label> 
             <input type="text" required id="postal-code" name="postal-code" pattern="[0-9]{5}" tittle="Code Postal">
+            <label for='creationMdp'>Créer votre mot de passe</label> 
+            <input type="password" required id="creationMdp" name="creationMdp" pattern={25}>
             <input type="submit" value="Valider">
             <input type="reset" value="Annuler">
-    </fieldset>
-</form>
+</div>
+<div id="Connexion">
+    <h1>Se connecter</h1>
+    <label for="mail"> E-mail : </label>
+    <input type="email" required id= "mail" name="mail">
+    <label for="mdp">Mot de passe :</label>
+    <input type="password" required id="mdp" name="mdp">
+    <input type="submit" value="Se connecter">
+    <input type="reset" value="Effacer">
+</div>
+
     <footer id="footer"></footer>
 </body>
 </html>
