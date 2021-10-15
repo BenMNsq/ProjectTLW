@@ -1,10 +1,18 @@
+/* /////    MISE EN PAGE    ///////  */
 body{
-    background-color:whitesmoke;
+    background-color:rgb(218, 171, 110);
     margin:0px;
     padding:0px;
 }
+header{
+    background-color:rgb(143, 85, 47);
+    border:rgba(141, 91, 58, 0.952);
+    border-width: 2px;
+    padding:2px;
+    padding-top:5px;
+}
 footer{
-    background-color:grey;
+    background-color:rgb(145, 85, 45);
     border-top:2px solid black;
     width:100%;
 }
@@ -14,10 +22,16 @@ footer{
     background-color:black;
 }
 
+h1{
+    font: small-caps bold 24px/1 sans-serif;     /* Même police sur toutes les pages, chaque titre est accordé aux autres */
+}
 
-
-
-
+p {
+    font: small-caps 18px/1 sans-serif;
+}
+label {
+    font: small-caps  18px/1 sans-serif;
+}
 
 
 .baccueil{
@@ -39,12 +53,7 @@ footer{
     border:2px black;
 }
 
-header{
-    background-color: grey;
-    border-width: 2px;
-    padding:2px;
-    padding-top:5px;
-}
+
 
 #titre_site {
     color:white;
@@ -54,12 +63,32 @@ header{
 
 #bgateaudiv {
     display:flex;
+    /* grid-gap:50px;
+    grid-template-columns:auto auto;
+    grid-column:1;
+     */
+
     align-items: center;
     justify-content:space-evenly;
-    position:relative;
+    position:relative; 
     left:0%;
     padding-top:200px;
 }
+#etageUnique {
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+ 
+    background-image: cover;
+    background-repeat: no-repeat;     /* j'essaie d'ajuster les images pour qu'elles aient la même taille*/
+}
+/* #etagesDoubles {
+    grid-column-start: 2;
+    grid-column-end: 3;                       J'ai essayé d'utiliser "grid layout" plutôt que flex mais sans succès.
+}
+#etagesTriples {
+    grid-column-start: 3;
+    grid-column-end: 4;  
+} */
 
 /* .bgateau {
     background-color:blanchedalmond;
@@ -109,8 +138,8 @@ a.button {
     padding-left: 20px;padding-right: 20px;
     text-align: center;
     width: 100%;
-    font: small-caps bold 24px/1 sans-serif;
-}
+    /* font: small-caps bold 24px/1 sans-serif; */
+} 
 
 
 .carousel-container {
@@ -140,7 +169,7 @@ a.button {
     text-align: center;
     top: 200px;
     color:oldlace;
-    font: small-caps 18px/1 sans-serif;
+    /* font: small-caps 18px/1 sans-serif; */
 }
 #Bequipe {
     
@@ -150,7 +179,7 @@ a.button {
     text-align: center;
     top: 200px;
     color:oldlace;
-    font: small-caps 18px/1 sans-serif;    
+    /* font: small-caps 18px/1 sans-serif;     */
 }
 .prev, .next {
     height:5%;
