@@ -32,8 +32,21 @@ function contact() {
     document.location.href="Contact.html"
 }
 
+/*
+var ButtonScrollTop = Document.getElementById("ButtonScrollTop");
 
- /////////* Code Carousel*//////////
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 ) 
+    {ButtonScrollTop.style.display = "block";} 
+    else {ButtonScrollTop.style.display = "none";}
+}
+function ScrollToTop() {// For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+/////////* Code Carousel*//////////
 var slideIndex = 1;
 showSlides(slideIndex);
 
