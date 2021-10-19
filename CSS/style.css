@@ -34,6 +34,46 @@ label {
     font: small-caps  18px/1 sans-serif;
 }
 
+.option {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boption {
+    background-color: grey;
+    color:white;
+    border:none;
+    border-radius:12px;
+    width:200px;
+    height:50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.boptionchoisie {
+    background-color: blue;
+    border:none;
+    border-radius:12px;
+    width:200px;
+    height:50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.boptionchoisie:hover {
+    cursor:pointer;
+    background-color:lightblue;
+    transition:0.3s;
+}
+
+.boption:hover {
+    cursor:pointer;
+    background-color: lightgrey;
+    transition:0.3s;
+}
+
 #footer-div{
     display:flex;
     flex-direction:row;
@@ -114,7 +154,8 @@ label {
 .grid-container {
     display:grid;
     grid-template-columns: auto auto;
-    background-color: blanchedalmond;
+    border:black;
+    border-width: 3px;
     grid-gap:10px;
     padding:10px
 }
@@ -133,12 +174,14 @@ label {
 
 #item2 {
     grid-column-start: 2;
-    grid-column-end: 3;                       
+    grid-column-end: 3;
+    width:900px;                       
 }
 
 #item3 {
     grid-column-start: 2;
-    grid-column-end: 3;  
+    grid-column-end: 3; 
+    width:900px 
 } 
 
 /* .bgateau {
@@ -194,14 +237,10 @@ a.button {
 
 
 .carousel-container {
-    
     text-align: center;
-    
     margin-top: 0%; 
     /* margin-left:auto; margin-right: auto; */
-    
-    
-    }
+}
 
 .slide {
     position: relative;
@@ -211,7 +250,6 @@ a.button {
     background-size: cover; /* permet d'ajuster l'image dans le div */
     background-repeat: no-repeat;
     background-position: center;
-    
     }
 
 .text {

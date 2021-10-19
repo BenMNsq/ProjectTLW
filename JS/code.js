@@ -12,7 +12,9 @@ fetch("footer.html")
         document.getElementById("footer").innerHTML = texte
     })
 
-    function monpanier() {
+// Etat des boutons de personnalisation
+
+function monpanier() {
     document.location.href="MonPanier.html"
 }
 
@@ -32,10 +34,48 @@ function contact() {
     document.location.href="Contact.html"
 }
 
-if (location.pathname=="/HTML/Personaliser.html"){
-    let produit_id = new URLSearchParams(window.location.search).get("etages");
-    document.getElementById("item1").innerHTML = `${produit_id} étages`;
+class Gateau {
+    constructor(etages,nom,base_price,topping_price, gout){
+        this.nom = nom;
+        this.etages = etages;
+        this.base_price = base_price;
+        this.topping_price = topping_price 
+        this.price = base_price + topping_price
+        this.gout = gout
+    }
 }
+
+
+if (location.pathname=="/HTML/Personaliser.html"){
+    let etages = new URLSearchParams(window.location.search).get("etages");
+    document.getElementById("item1").innerHTML = `${etages} étages`;
+    let nom = etages + ' floor cake'
+    let base_price = etages*20
+    let cake = new Gateau(etages,nom,base_price,0, '')
+    console.log(cake)
+}
+
+let gouts = {
+    chocolat: false,
+    fraise: false,
+    pomme: false,
+    yaourt: false,
+    caramel: false
+}
+
+function activer(gout) {
+    // for (let g in gouts) {
+    //     gouts[g] = false;
+    //     document.getElementById(g).classList.remove("boptionchoisie")
+    // }
+
+    if (gouts[gout] == false) {document.getElementById(gout).classList.add("boptionchoisie"); gouts[gout] = true}
+    else {document.getElementById(gout).classList.remove("boptionchoisie"); gouts[gout] = false}
+    // cake.gout = gout;
+}
+
+
+
 
 /*
 var ButtonScrollTop = Document.getElementById("ButtonScrollTop");
