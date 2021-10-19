@@ -8,25 +8,33 @@
 </head>
 <body>
     <header id="header"></header>
-<div id="maCommande">
     <h1> Récapitulatif de ma Commande</h1>
-    <p>Quantité</p>
-
-    <input class="soumettre" type="submit" value="Payer">
+<table classe="maCommande">
+    <thead> 
+        <tr><th>Articles</th><th>Quantité</th><th>Prix</th></tr>
+    </thead>
+    <tbody id="cart-tablebody"></tbody>
+</table>
+    
+  
+    
     <input class="delete" type="reset" value="Effacer mon panier">
 </div>
 <div id="informationsPaiement">
 <h1>Paiement </h1>
-<p>Prix:</p>
-<p>Réduction :</p>
-<p>Total à régler :</p>
+<p> Prix:</p><span class="prixSR"></span> €</p>  
+<p> Réduction:</p><span class="reduction"></span> %</p>
+<p> Total:</p><span class="total"></span> €</p>  
 <p>Date de livraison :</p>
-<label for="lienCompte"> Si vous n'avez pas encore de compte client :</label>
-<a href="PageCompte.html" title="créer mon compte"> Créer mon compte</a>
+
 <label for='fname'>Prénom *:</label>
 <input type="text" required id="fname" name="given-name">
 <label for='mail'>Email :</label>
 <input type="email" required id="mail" name="mail">
+
+<input class="soumettre" type="submit" value="Passer Commande">
+<label for="lienCompte"> Si vous n'avez pas encore de compte client :</label>
+<a href="PageCompte.html" title="créer mon compte"> Créer mon compte</a>
 
 </div>
     <footer id="footer"></footer>
