@@ -1,6 +1,6 @@
 /* /////    MISE EN PAGE    ///////  */
 body{
-    background-color:rgb(218, 171, 110);
+    background-color:white(218, 171, 110);
     margin:0px;
     padding:0px;
 }
@@ -109,21 +109,36 @@ label {
     left:0%;
     padding-top:200px;
 }
-#etageUnique {
-    /* grid-column-start: 1;
-    grid-column-end: 2; */
- 
-    background-image: cover;
-    background-repeat: no-repeat;     /* j'essaie d'ajuster les images pour qu'elles aient la même taille*/
+
+
+.grid-container {
+    display:grid;
+    grid-template-columns: auto auto;
+    background-color: blanchedalmond;
+    grid-gap:10px;
+    padding:10px
+
 }
-/* #etagesDoubles {
+
+.grid-container > div {
+    background-color: white;
+    text-align: center;
+    font-size:30px
+}
+
+#item1 {
+    grid-row:1/3;
+}
+
+#item2 {
     grid-column-start: 2;
-    grid-column-end: 3;                       J'ai essayé d'utiliser "grid layout" plutôt que flex mais sans succès.
+    grid-column-end: 3;                       
 }
-#etagesTriples {
-    grid-column-start: 3;
-    grid-column-end: 4;  
-} */
+
+#item3 {
+    grid-column-start: 2;
+    grid-column-end: 3;  
+} 
 
 /* .bgateau {
     background-color:blanchedalmond;

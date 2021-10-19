@@ -32,6 +32,11 @@ function contact() {
     document.location.href="Contact.html"
 }
 
+if (location.pathname=="/HTML/Personaliser.html"){
+    let produit_id = new URLSearchParams(window.location.search).get("etages");
+    document.getElementById("item1").innerHTML = `${produit_id} étages`;
+}
+
 /*
 var ButtonScrollTop = Document.getElementById("ButtonScrollTop");
 
@@ -47,8 +52,10 @@ function ScrollToTop() {// For Safari
 }
 
 /////////* Code Carousel*//////////
-var slideIndex = 1;
-showSlides(slideIndex);
+if (location.pathname=="/HTML/index.html"){
+    var slideIndex = 1;
+    showSlides(slideIndex);
+}
 
 // Next/previous controls
 function plusSlides(n) {
