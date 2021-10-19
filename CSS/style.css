@@ -178,11 +178,11 @@ a.button {
 
 
 .carousel-container {
-    /* width: 800px; */
+    
     text-align: center;
-    /* height: 700px; */
-    /* position:absolute; */
-    margin-top: 5%; margin-left:auto; margin-right: auto;
+    
+    margin-top: 0%; 
+    /* margin-left:auto; margin-right: auto; */
     
     
     }
@@ -190,8 +190,8 @@ a.button {
 .slide {
     position: relative;
     display: none;
-    height: 450px;
-    width: 800px;
+    height: 700px;
+    width: 100%;
     background-size: cover; /* permet d'ajuster l'image dans le div */
     background-repeat: no-repeat;
     background-position: center;
@@ -200,7 +200,7 @@ a.button {
 
 .text {
     position: absolute;
-    padding-top: 10%;
+    padding-top: 10%; left:20%; right:20%;
     text-align: center;
     top: 200px;
     color:oldlace;
