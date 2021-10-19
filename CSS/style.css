@@ -26,8 +26,13 @@ footer{
 h1{
     font: small-caps bold 24px/1 sans-serif;     /* Même police sur toutes les pages, chaque titre est accordé aux autres */
 }
-
+a {
+    text-decoration:none;
+    font: small-caps 18px/1 sans-serif;
+    color: black;
+}
 p {
+    
     font: small-caps 18px/1 sans-serif;
 }
 label {

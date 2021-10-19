@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="../CSS/style2.css" />
     <script defer src="../JS/code.js"></script>
+    <script defer src="../JS/panier.js"></script>
     <title>Mon Panier</title>
 </head>
 <body>
@@ -11,7 +12,12 @@
     <h1> Récapitulatif de ma Commande</h1>
 <table classe="maCommande">
     <thead> 
-        <tr><th>Articles</th><th>Quantité</th><th>Prix</th></tr>
+        <tr>
+            <th>Articles</th>
+            <th>Options</th>
+            <th>Quantité</th>
+            <th>Prix</th>
+        </tr>
     </thead>
     <tbody id="cart-tablebody"></tbody>
 </table>
@@ -22,15 +28,15 @@
 </div>
 <div id="informationsPaiement">
 <h1>Paiement </h1>
-<p> Prix:</p><span class="prixSR"></span> €</p>  
+<p> Sous-Total:</p><span class="sousTot"></span> €</p>  
 <p> Réduction:</p><span class="reduction"></span> %</p>
 <p> Total:</p><span class="total"></span> €</p>  
 <p>Date de livraison :</p>
 
-<label for='fname'>Prénom *:</label>
-<input type="text" required id="fname" name="given-name">
 <label for='mail'>Email :</label>
 <input type="email" required id="mail" name="mail">
+<label for="mdp">Mot de passe :</label>
+<input type="password" required id="mdp" name="mdp">
 
 <input class="soumettre" type="submit" value="Passer Commande">
 <label for="lienCompte"> Si vous n'avez pas encore de compte client :</label>
