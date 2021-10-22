@@ -195,3 +195,7 @@ if (window.location.pathname == '/panier/') {
         inCartItemsNum -= qt;
         $('#in-cart-items-num').html(inCartItemsNum);
     }
+
+    // Ajout d'un article
+
+var btn = document.querySelector('input');
