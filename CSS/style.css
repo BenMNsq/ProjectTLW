@@ -143,11 +143,8 @@ label {
 
 #bgateaudiv {
     display:flex;
-    /* grid-gap:50px;
-    grid-template-columns:auto auto;
-    grid-column:1;
-     */
-
+    
+    text-align: center;
     align-items: center;
     justify-content:space-evenly;
     position:relative; 
@@ -155,6 +152,7 @@ label {
     padding-top:200px;
 }
 
+/* PAGE PERSONNALISATION */
 
 .grid-container {
     display:grid;
@@ -298,7 +296,8 @@ a.button {
     }
 .prev:hover, .next:hover {
     background-color:rgb(136, 131, 132);
-    }
+}
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -309,9 +308,9 @@ a.button {
     /* display: inline-block; */
     transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
+/* .active, .dot:hover {
     background-color: #717171;
-}
+} */
     
 #affichageDot {
     position : absolute;
