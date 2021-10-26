@@ -14,9 +14,11 @@
     <header id="header"></header>
 
     <div class="grid-container">
-        <div id="item1">gateau</div>
+        <div id="item1">gateau
+            <br> <p id="prix"></p>
+        </div>
         <div class="option" id="item2">
-            option1
+            Goût
             <div>
                 <button class="boption" onclick="activer('chocolat')" id="chocolat">Chocolat</button>
             </div> 
@@ -34,21 +36,21 @@
             </div>
         </div>
         <div class="option" id="item3">
-            option2
+            Toppings
             <div>
-                <button class="boption">choix 1</button>
+                <button class="boption" onclick="topping_fct('copeaux')" id="copeaux">Copeaux de chocolat</button>
             </div> 
             <div>
-                <button class="boption">choix 2</button>
+                <button class="boption" onclick="topping_fct('arc')" id="arc">Arc-en-ciel</button>
             </div>
             <div>
-                <button class="boption">choix 3</button>
+                <button class="boption" onclick="topping_fct('smarties')" id="smarties">Smarties</button>
             </div>
             <div>
-                <button class="boption">choix 4</button>
+                <button class="boption" onclick="topping_fct('kinder')" id="kinder">Kinder Bueno</button>
             </div>
             <div>
-                <button class="boption">choix 5</button>
+                <button class="boption" onclick="topping_fct('fruits')" id="fruits">Fleurs de fruits</button>
             </div>
         </div>
     </div>

@@ -54,28 +54,73 @@ if (location.pathname=="/HTML/Personaliser.html"){
     let cake = new Gateau(etages,nom,base_price,0, '')
     console.log(cake)
 }
+console.log
+if (location.pathname=="/ProjectTLW/HTML/Personaliser.html"){
+    let gouts = {
+        chocolat: false,
+        fraise: false,
+        pomme: false,
+        yaourt: false,
+        caramel: false,
+    }
+    console.log(gouts)
 
-let gouts = {
-    chocolat: false,
-    fraise: false,
-    pomme: false,
-    yaourt: false,
-    caramel: false
+    let toppings = {
+        copeaux: false,
+        arc: false,
+        smarties: false,
+        kinder: false,
+        fruits: false,
+    }
+    console.log(toppings)
+
+    for (let t in toppings) {
+        document.getElementById(t).disabled = false
+    }
+
+    for (let g in gouts) {
+        document.getElementById(g).disabled = false
+    }
+
+
+    function activer(gout) {
+        // for (let g in gouts) {
+        //     gouts[g] = false;
+        //     document.getElementById(g).classList.remove("boptionchoisie")
+        // }
+
+        if (gouts[gout] == false) { 
+            gouts[gout] = true;
+            let g = "chocolat"
+            for (let g in gouts){
+                document.getElementById(g).className = "boptioninactive";
+                document.getElementById(g).disabled = true;
+            }
+            document.getElementById(gout).disabled = false;
+            document.getElementById(gout).className = "boptionchoisie";
+        } 
+
+        else { 
+            gouts[gout] = false;
+            for (let g in gouts) {
+                document.getElementById(g).disabled = false;
+                document.getElementById(g).className = "boption"
+            }
+        }
+    }
+    function topping_fct(topping) {
+
+        if (toppings[topping] == false) {
+            toppings[topping] = true;
+            document.getElementById(topping).className = "boptionchoisie";
+        }
+
+        else {
+            toppings[topping] = false;
+            document.getElementById(topping).className = "boption";
+        }
+    }
 }
-
-function activer(gout) {
-    // for (let g in gouts) {
-    //     gouts[g] = false;
-    //     document.getElementById(g).classList.remove("boptionchoisie")
-    // }
-
-    if (gouts[gout] == false) {document.getElementById(gout).classList.add("boptionchoisie"); gouts[gout] = true}
-    else {document.getElementById(gout).classList.remove("boptionchoisie"); gouts[gout] = false}
-    // cake.gout = gout;
-}
-
-
-
 
 /*
 var ButtonScrollTop = Document.getElementById("ButtonScrollTop");
@@ -92,6 +137,7 @@ function ScrollToTop() {// For Safari
 }
 
 /////////* Code Carousel*//////////
+
 if (location.pathname=="/HTML/index.html"){
     var slideIndex = 1;
     showSlides(slideIndex);
