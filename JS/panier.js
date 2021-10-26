@@ -198,4 +198,4 @@ if (window.location.pathname == '/panier/') {
 
     // Ajout d'un article
 
-var btn = document.querySelector('input');
+    var btn = document.querySelector('input');

@@ -24,5 +24,20 @@
             
             
         }
+    ],
+
+    "cout": [
+        {
+            "Total": "Prix du goût :",
+            "total": "prixGout"
+        },
+        {
+            "Total": "Prix du topping:",
+            "total": "prixtopping"
+        },
+        {
+            "Total": "Prix du glaçage :",
+            "total": "prixGlacage"
+        }
     ]
 }
