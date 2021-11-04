@@ -8,12 +8,7 @@
     -ms-flex-align: stretch;
 }
 
-.Navigateur {
-    display: flex;
-    justify-content:space-between;
-    row-gap:100%;
-    
-}
+
 .Navigation {
     -webkit-appearance: button;
     -moz-appearance: button;

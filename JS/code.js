@@ -54,7 +54,6 @@ if (location.pathname == "/HTML/Personaliser.html") {
     let cake = new Gateau(etages, nom, base_price, 0, '')
     console.log(cake)
 }
-console.log
 if (location.pathname=="/ProjectTLW/HTML/Personaliser.html"){
     let gouts = {
         chocolat: false,
@@ -124,7 +123,7 @@ if (location.pathname=="/ProjectTLW/HTML/Personaliser.html"){
             document.getElementById(topping).className = "boption";
         }
     }
-}
+
 
 /*
 var ButtonScrollTop = Document.getElementById("ButtonScrollTop");
@@ -141,7 +140,7 @@ function ScrollToTop() {// For Safari
 }
 
 /////////* Code Carousel*//////////
-if (location.pathname == "/HTML/index.html") {
+if (location.pathname == "/ProjectTLW/HTML/index.html") {
     var slideIndex = 1;
     showSlides(slideIndex);
 }
@@ -171,6 +170,7 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "inline-block";
     dots[slideIndex - 1].className += " active";
 }
+
 function personnaliser() {
     document.location.href = "Personnaliser.html"
 }
@@ -180,11 +180,11 @@ function personnaliser() {
 // utilisation Template //
 
 let contenu_json = {};
-fetch('/JSON/baseDonnee.json')
+fetch('../JSON/baseDonnee.json')
     .then(function (response) {
         return response.json();
     })
-    .then(function (json) {
+    .then(function(json) {
         var gateaux = json.gateau;
         let template = document.querySelector("#listeGateau");
         for (const g of gateaux) { // itère sur le tableau
