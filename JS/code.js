@@ -143,7 +143,7 @@ fetch('/JSON/baseDonnee.json')
             newContent = clone.firstElementChild.innerHTML // remplace {{nom}}
                 .replace(/{{nom}}/g, g.nom)
                 .replace(/{{image}}/g, g.image)
-                // .replace(/{{attribut}}/g, g.att) 
+                .replace(/{{Prix}}/g, g.prix)
                 .replace(/{{lien}}/g, g.lien);
             clone.firstElementChild.innerHTML = newContent;
             document.getElementById("bgateaudiv").appendChild(clone); // Placer les elements du template au dessus de footer dans le div bgateaudiv

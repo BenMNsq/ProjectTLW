@@ -14,9 +14,9 @@
     <header id="header"></header>
 
     <div class="grid-container">
-        <div id="item1">gateau</div>
-        <div class="option" id="item2">
-            option1
+        <div id="photoGateau">gateau</div>
+        <div class="option" id="gout">
+            Goût :
             <div>
                 <button class="boption" onclick="activer('chocolat')" id="chocolat">Chocolat</button>
             </div> 
@@ -33,16 +33,16 @@
                 <button class="boption" onclick="activer('caramel')" id="caramel">Caramel</button>
             </div>
         </div>
-        <div class="option" id="item3">
-            option2
+        <div class="option" id="topping">
+            Topping :
             <div>
-                <button class="boption">choix 1</button>
+                <button class="boption">Tapis de neige</button>
             </div> 
             <div>
-                <button class="boption">choix 2</button>
+                <button class="boption">Glaçage au chocolat</button>
             </div>
             <div>
-                <button class="boption">choix 3</button>
+                <button class="boption">Pluie d'Arc-en-ciel</button>
             </div>
             <div>
                 <button class="boption">choix 4</button>
@@ -50,12 +50,18 @@
             <div>
                 <button class="boption">choix 5</button>
             </div>
+            
+        </div>
+
+        <div class="boutonPanier">
+            <a id="ajoutPanier" href="MonPanier.html"><p> Ajouter au Panier</p></a>
         </div>
     </div>
+
    <template id="prixPanier"> 
         <p> {{Total}}</p><span class={{total}}></span> €</p>  
     </template> 
-   <a id="ajoutPanier" href="MonPanier.html"><p> Ajouter au Panier</p></a>
+   
     <footer id="footer"></footer>
 </body>
 </html>
