@@ -111,6 +111,19 @@ form{
     transition:0.3s;
 }
 
+.boptioninactive {
+    background-color: grey;
+    color:white;
+    border:none;
+    border-radius:12px;
+    width:200px;
+    height:50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
 #footer-div{
     display:flex;
     flex-direction:row;
@@ -188,6 +201,10 @@ form{
    
 }
 
+.class_accueil {
+    border:black;
+    border-width:3px;
+}
 /* PAGE PERSONNALISATION */
 
 .grid-container {
@@ -209,13 +226,17 @@ form{
     grid-row:1/4;
     /* width:900px; */
     /* height:900px; */
-}
+/* #item1 {
+    grid-row:1/3;
+    width:100%;
+    height:100%;
+} */
 
-#gout {
+/* #gout {
     grid-column-start: 2;
     grid-column-end: 3;
     /* width:900px;                        */
-}
+} */
 
 #topping {
     grid-column-start: 2;

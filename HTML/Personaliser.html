@@ -15,8 +15,12 @@
 
     <div class="grid-container">
         <div id="photoGateau">gateau</div>
+       
+        <div id="item1">gateau
+            <br> <p id="prix"></p>
+        </div>
         <div class="option" id="gout">
-            Goût :
+            Goût
             <div>
                 <button class="boption" onclick="activer('chocolat')" id="chocolat">Chocolat</button>
             </div> 
@@ -34,21 +38,21 @@
             </div>
         </div>
         <div class="option" id="topping">
-            Topping :
+            Toppings
             <div>
-                <button class="boption">Tapis de neige</button>
+                <button class="boption" onclick="topping_fct('copeaux')" id="copeaux">Copeaux de chocolat</button>
             </div> 
             <div>
-                <button class="boption">Glaçage au chocolat</button>
+                <button class="boption" onclick="topping_fct('arc')" id="arc">Arc-en-ciel</button>
             </div>
             <div>
-                <button class="boption">Pluie d'Arc-en-ciel</button>
+                <button class="boption" onclick="topping_fct('smarties')" id="smarties">Smarties</button>
             </div>
             <div>
-                <button class="boption">choix 4</button>
+                <button class="boption" onclick="topping_fct('kinder')" id="kinder">Kinder Bueno</button>
             </div>
             <div>
-                <button class="boption">choix 5</button>
+                <button class="boption" onclick="topping_fct('fruits')" id="fruits">Fleurs de fruits</button>
             </div>
             
         </div>
