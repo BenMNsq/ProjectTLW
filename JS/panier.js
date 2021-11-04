@@ -198,4 +198,4 @@ if (window.location.pathname == '/panier/') {
 
     // Ajout d'un article
 
-    
+}
