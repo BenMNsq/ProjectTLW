@@ -56,7 +56,22 @@ label {
 }
 
 
+form{
+    border-style: groove;
+}
 
+/* Mise en forme COMPTE */
+
+.formulaires {
+    display: grid;
+    justify-content: space-between;
+}
+/* .nouveauCompte {
+    display: flex;
+    justify-content: right;
+}
+
+#connexion */
 
 /*     */
 .option {
@@ -214,7 +229,7 @@ label {
     grid-template-columns: auto auto;
     border:black;
     border-width: 3px;
-    grid-gap:10px;
+    grid-gap:10px 20px;
     padding:10px
 }
 
@@ -224,23 +239,30 @@ label {
     font-size:30px;
 }
 
-#item1 {
+#photoGateau {
+    grid-row:1/4;
+    /* width:900px; */
+    /* height:900px; */
+/* #item1 {
     grid-row:1/3;
     width:100%;
     height:100%;
-}
+} */
 
-#item2 {
+/* #gout {
     grid-column-start: 2;
     grid-column-end: 3;
-    width:100%;                       
-}
+    /* width:900px;                        */
+} */
 
-#item3 {
+#topping {
     grid-column-start: 2;
     grid-column-end: 3; 
-    width:100% 
-} 
+}
+#boutonPanier {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
 
 /* .bgateau {
     background-color:blanchedalmond;

@@ -14,10 +14,12 @@
     <header id="header"></header>
 
     <div class="grid-container">
+        <div id="photoGateau">gateau</div>
+       
         <div id="item1">gateau
             <br> <p id="prix"></p>
         </div>
-        <div class="option" id="item2">
+        <div class="option" id="gout">
             Goût
             <div>
                 <button class="boption" onclick="activer('chocolat')" id="chocolat">Chocolat</button>
@@ -35,7 +37,7 @@
                 <button class="boption" onclick="activer('caramel')" id="caramel">Caramel</button>
             </div>
         </div>
-        <div class="option" id="item3">
+        <div class="option" id="topping">
             Toppings
             <div>
                 <button class="boption" onclick="topping_fct('copeaux')" id="copeaux">Copeaux de chocolat</button>
@@ -52,12 +54,18 @@
             <div>
                 <button class="boption" onclick="topping_fct('fruits')" id="fruits">Fleurs de fruits</button>
             </div>
+            
+        </div>
+
+        <div class="boutonPanier">
+            <a id="ajoutPanier" href="MonPanier.html"><p> Ajouter au Panier</p></a>
         </div>
     </div>
+
    <template id="prixPanier"> 
         <p> {{Total}}</p><span class={{total}}></span> €</p>  
     </template> 
-   <a id="ajoutPanier" href="MonPanier.html"><p> Ajouter au Panier</p></a>
+   
     <footer id="footer"></footer>
 </body>
 </html>
