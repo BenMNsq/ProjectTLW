@@ -140,7 +140,7 @@ function ScrollToTop() {// For Safari
 }
 
 /////////* Code Carousel*//////////
-if (location.pathname == "/ProjectTLW/HTML/index.html") {
+if (location.pathname == "/HTML/index.html") {
     var slideIndex = 1;
     showSlides(slideIndex);
 }
@@ -200,5 +200,7 @@ fetch('../JSON/baseDonnee.json')
         }
     });
 
+
+// PARTIE  FILTRE //
 
 
