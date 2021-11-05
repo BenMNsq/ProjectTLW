@@ -55,23 +55,25 @@ label {
     text-align: center;
 }
 
-
+/* 
 form{
     border-style: groove;
-}
+} */
 
 /* Mise en forme COMPTE */
 
 .formulaires {
     display: grid;
     justify-content: space-between;
+    grid-template-columns: auto;
 }
-/* .nouveauCompte {
-    display: flex;
-    justify-content: right;
+/* #nouveauCompte {
+    grid-column: 1/2;
 }
 
-#connexion */
+#connexion {
+    grid-column: 1;
+} */
 
 /*     */
 .option {

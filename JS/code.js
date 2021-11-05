@@ -198,9 +198,23 @@ fetch('../JSON/baseDonnee.json')
             document.getElementById("bgateaudiv").appendChild(clone); // Placer les elements du template au dessus de footer dans le div bgateaudiv
 
         }
+        
     });
 
-
 // PARTIE  FILTRE //
+
+// function filtreM() {
+//         var fmax = document.getElementsByClassName('fmax')
+//         for (var i=0; i<fmax.length; i++) {
+//             var buttonF= fmax[i]
+//             buttonF.addEventListener('click',filtreMon)
+//         }
+//     }
+//      function filtreMon(event) { 
+//       var button.clicked = event.target
+//       button.clicked.parentElement.find(Math.max(g.prix))
+      
+//      }
+
 
 
