@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- <link rel="stylesheet" href="../CSS/style.css" /> -->
     <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="stylesheet" href="../CSS/style2.css" />
     <script defer src="../JS/code.js"></script>
-    <script defer src="../JS/panier.js"></script>
+    <!-- <script defer src="../JS/panier.js"></script> -->
     <title>Mon Panier</title>
 </head>
 <body>
     <header id="header"></header>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">gateau</span>
+            <img class="shop-item-image" src="../images/cakeBB.jpg">
+            <div class="shop-item-details">
+            <span class="shop-item-price">€6.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">AJOUTER AU PANIER</button>
+        </div>
+    </div>
+    </div>
     <h1> Récapitulatif de ma Commande</h1>
-<table classe="maCommande">
-    <thead> 
-        <tr>
-            <th>Articles</th>
-            <th>Options</th>
-            <th>Quantité</th>
-            <th>Prix</th>
-        </tr>
-    </thead>
-    <tbody id="cart-tablebody"></tbody>
-</table>
     
-  
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ARTICLES</span>
+            <span class="cart-price cart-header cart-column">PRIX</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITE</span>
+        </div>
+    <div class="cart-items">
+        <!-- <div class="cart-row">
+
+            <div class="cart-item cart-column">
+                <img class="cart-item-image" src="../images/cakeBB.jpg" width="100" height="100">
+                <span class="cart-item-title">gateau 1 étage- chocolat</span>
+            </div>
+
+            <span class="cart-price cart-column">€22.4</span>
+
+            <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1" >
+                <button class="btn btn-danger" type="button">SUPPRIMER</button>
+            </div> -->
+
+        </div>
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">€0</span>
+    </div>
+
+    <button class="btn btn-primary btn-purchase" type="button">Payer</button>
+        
     
-    <input class="delete" type="reset" value="Effacer mon panier">
-</div>
-<div id="informationsPaiement">
-<h1>Paiement </h1>
-<p> Sous-Total:</p><span class="sousTot"></span> €</p>  
-<p> Réduction:</p><span class="reduction"></span> %</p>
-<p> Total:</p><span class="total"></span> €</p>  
-<p>Date de livraison :</p>
-
-<label for='mail'>Email :</label>
-<input type="email" required id="mail" name="mail">
-<label for="mdp">Mot de passe :</label>
-<input type="password" required id="mdp" name="mdp">
-
-<input class="soumettre" type="submit" value="Passer Commande">
-<label for="lienCompte"> Si vous n'avez pas encore de compte client :</label>
-<a href="PageCompte.html" title="créer mon compte"> Créer mon compte</a>
-
-</div>
+    
+   
     <footer id="footer"></footer>
 </body>
+
 </html>
