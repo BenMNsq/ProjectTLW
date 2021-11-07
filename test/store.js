@@ -22,6 +22,12 @@ function ready() {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
+    
+    // var choixLivraison= document.getElementsByClassName('casualDeliver')
+    // for (var i = 0; i < choixLivraison.length; i++) {
+    //     var caseB = choixLivraison[i]
+    //     caseB.addEventListener('check', choixLivraisonChecked)
+    // }
 
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
@@ -100,4 +106,19 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
+
+function choixLivraison() {
+    var deliverChoiceContainer= document.getElementsByClassName('deliver-option')[0]
+    var slowDeliver= deliverChoiceContainer.getElementsByClassName('casualDeliver')
+    var fastDeliver=deliverChoiceContainer.getElementsByClassName('expressDeliver')
+
+    if (fastDeliver == checked) {
+        slowDeliver == unchecked
+    
+    }
+    if (slowDeliver ==checked) {
+        fastDeliver ==unchecked
+    }
+
 }
