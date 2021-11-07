@@ -319,8 +319,14 @@ function updateCartTotal() {
         var price = parseFloat(priceElement.innerText.replace('€', ''))
         var quantity = quantityElement.value
         total = total + (price * quantity)
+        if (quantity >= 10) {
+            document.getElementsByClassName('cart-discount-price')[0].innerText= Math.round((total * 0.1)*100)/100 + '€'
+            total = total - (total * 0.1)         
+        }
+        
     }
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = '€' + total
+    document.getElementsByClassName('cart-total-price')[0].innerText = total + '€'
+
 }
 
