@@ -1,8 +1,9 @@
-{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {
     "gateau": [
         {
             "nom":"Etage1",
             "prix": "20€",
+            "id":"1",
             "image":"../images/1etage.jpg",
             "lien": "Personaliser.html?etages=1"
       
@@ -11,6 +12,7 @@
         {
             "nom":"Etage2",
             "prix":"40€",
+            "id":"2",
             "image":"../images/2etages.jpeg",
             "lien":"Personaliser.html?etages=2"
           
@@ -19,6 +21,7 @@
         {
             "nom":"Etage 3",
             "prix":"60€",
+            "id":"3",
             "image":"../images/3etages.jpg",
             "lien":"Personaliser.html?etages=3"
             
