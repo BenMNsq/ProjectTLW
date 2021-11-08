@@ -11,10 +11,18 @@
     <header id="header"></header>
     <div class="shop-items">
         <div class="shop-item">
-            <span class="shop-item-title">gateau</span>
+            <span class="shop-item-title">Part de gateau</span>
             <img class="shop-item-image" src="../images/cakeBB.jpg">
             <div class="shop-item-details">
             <span class="shop-item-price">7€</span>
+            <button class="btn btn-primary shop-item-button" type="button">AJOUTER AU PANIER</button>
+            
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">gateau 1 étage crème framboise</span>
+            <img class="shop-item-image" src="../images/red-Velvet.jpg">
+            <div class="shop-item-details">
+            <span class="shop-item-price">22€</span>
             <button class="btn btn-primary shop-item-button" type="button">AJOUTER AU PANIER</button>
         </div>
     </div>
@@ -32,11 +40,38 @@
     <div class="cart-total">
         <strong class="cart-discount-title">Réduction</strong>
         <span class="cart-discount-price"></span> </br>
-        <strong class="cart-total-title">Total</strong>
+        <strong class="cart-total-title">Sous-Total</strong>
         <span class="cart-total-price">0€</span>
     </div>
 
-    <button class="btn btn-primary btn-purchase" type="button">Payer</button>
+    <div class="formulaires">
+        <form action="" id="nouveauCompte">
+            <h2 > Créer votre compte :</h2>
+            <p>Les champs suivis d'une * sont obligatoires</p>
+                <label for='fname'>Pénom *:</label>
+                <input type="text"  id="fname" name="given-name"required>
+                <label for='lname'> Nom* :</label>
+                <input type="text"   id="lname" name="family-name"required>
+                <label for='mail'>Adresse mail *:</label> 
+                <input type="email"  id="mail" name="mail"required>
+                <label for='numtel'>Numero de téléphone :</label> 
+                <input type="text" id="numtel" name="numtel" pattern="[0-9]{10}">
+                <label for='Saddress'>Adresse postale *:</label> 
+                <input type="text" id="Saddress" name="street-address" tittle="addresse postale"required >
+                <label for='postal-code'>Code Postal *:</label> 
+                <input type="text"  id="postal-code" name="postal-code" pattern="[0-9]{5}" tittle="Code Postal"required>
+                <label for='creationMdp'>Créer votre mot de passe</label> 
+                <input type="password"  id="creationMdp" name="creationMdp" pattern={25} required>
+                <input type="submit" value="Valider">
+                <input type="reset" value="Annuler">
+        </form>
+
+        <div class="prix-total"> 
+            <strong class="cart-final-total-title">Total</strong>
+            <span class="cart-final-total-price"></span>
+        </div>
+
+    <button type= "submit" class="btn btn-primary btn-purchase" type="button">Payer</button>
         
     
     

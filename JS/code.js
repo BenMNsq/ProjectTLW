@@ -199,23 +199,43 @@ fetch('../JSON/baseDonnee.json')
 
         }
         
+        
     });
 
 // PARTIE  FILTRE //
-
-// function filtreM() {
-//         var fmax = document.getElementsByClassName('fmax')
-//         for (var i=0; i<fmax.length; i++) {
-//             var buttonF= fmax[i]
-//             buttonF.addEventListener('click',filtreMon)
-//         }
+// fetch('../JSON/baseDonnee.json')
+// .then(function (response) {
+//     return response.json();
+// })
+// .then(function(json){
+//     var gateaux = json.gateau;
+//     var prixGateaux= []
+//     for (const g of gateaux) {
+//         prixGateaux= prixGateau + g.prix
 //     }
-//      function filtreMon(event) { 
-//       var button.clicked = event.target
-//       button.clicked.parentElement.find(Math.max(g.prix))
-      
-//      }
+// }
+// .function filtre() {
 
+//     var maxfilter = document.getElementsByClassName('btn-max')
+//         for (var i = 0; i < maxfilter.length; i++) {
+//             var buttonNF = maxfilter[i]
+//             buttonNF.addEventListener('click', maxfilterClicked)
+//         }
+// }
+
+// function maxfilterClicked(event) { 
+//     const fmax=Math.max(...prixGateau)
+       
+// }
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const fmax=Math.max(...arr)
+// var obj = JSON.parse('{ "prix": "20€","id":"1"}, {"prix":"40€","id":"2"},{"prix":"60€","id":"3"}');
+// var myJSON = JSON.stringify(obj);
+
+
+//  Je sais pas comment récuperer les informations du JSON pour faire un tableau avec seulement les prix (pour pouvoir utiliser 
+// Math.max(...[x,x,x])) et cacher tous les autres éléments sauf celui qui remplit la condition.
 
 // PANIER //
 if (document.readyState == 'loading') {
@@ -311,6 +331,7 @@ function addItemToCart(title, price, imageSrc) {
 function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName('cart-items')[0]
     var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+    var ftotal =0
     var total = 0
     for (var i = 0; i < cartRows.length; i++) {
         var cartRow = cartRows[i]
@@ -319,14 +340,17 @@ function updateCartTotal() {
         var price = parseFloat(priceElement.innerText.replace('€', ''))
         var quantity = quantityElement.value
         total = total + (price * quantity)
+        ftotal= total
         if (quantity >= 10) {
             document.getElementsByClassName('cart-discount-price')[0].innerText= Math.round((total * 0.1)*100)/100 + '€'
-            total = total - (total * 0.1)         
+            total = total - (total * 0.1)
+            ftotal=total     
         }
         
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = total + '€'
+    document.getElementsByClassName('cart-final-total-price')[0].innerText= ftotal + '€'
 
 }
 
